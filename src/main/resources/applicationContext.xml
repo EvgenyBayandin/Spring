@@ -10,13 +10,11 @@
 
     <bean id="musicBean"
             class="com.DanceMusic">
-<!--            class="com.RockMusic">-->
-<!--            class="com.ClassicalMusic">-->
     </bean>
 
     <bean id="musicPlayer"
           class="com.MusicPlayer">
-        <constructor-arg ref="musicBean"/>
+        <property name="music" ref="musicBean"/>
     </bean>
 
 </beans>
