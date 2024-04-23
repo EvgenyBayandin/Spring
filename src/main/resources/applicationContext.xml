@@ -14,4 +14,9 @@
 <!--            class="com.ClassicalMusic">-->
     </bean>
 
+    <bean id="musicPlayer"
+          class="com.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
+
 </beans>
