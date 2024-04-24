@@ -12,9 +12,8 @@ public class MusicPlayer {
         this.rockMusic = rockMusic;
     }
 
-    public void playMusic() {
-        System.out.println("Playing song: " + danceMusic.getSong());
-        System.out.println("Playing song: " + rockMusic.getSong());
+    public String playMusic() {
+        return "Playing song: " + danceMusic.getSong();
     }
 
 }
