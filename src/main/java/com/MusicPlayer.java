@@ -3,20 +3,18 @@ import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 @Component
 public class MusicPlayer {
-    private Music music;
-
-
-    public MusicPlayer(Music music) {
-        this.music = music;
-    }
+    private DanceMusic danceMusic;
+    private RockMusic rockMusic;
 
     @Autowired
-    public void setMusic(com.Music music) {
-        this.music = music;
+    public MusicPlayer(DanceMusic danceMusic, RockMusic rockMusic) {
+        this.danceMusic = danceMusic;
+        this.rockMusic = rockMusic;
     }
 
     public void playMusic() {
-        System.out.println("Playing song: " + music.getSong());
+        System.out.println("Playing song: " + danceMusic.getSong());
+        System.out.println("Playing song: " + rockMusic.getSong());
     }
 
 }
