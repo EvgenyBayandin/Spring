@@ -14,8 +14,10 @@
             class="com.DanceMusic">
     </bean>
 
+
     <bean id="musicPlayer"
-          class="com.MusicPlayer">
+          class="com.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>

@@ -1,5 +1,6 @@
 package com;
 
+
 public class MusicPlayer {
     private Music music;
     private String name;
@@ -32,7 +33,11 @@ public class MusicPlayer {
     public void setMusic(Music music) {
         this.music = music;
     }
+
+
+
     public void playMusic() {
         System.out.println("Playing song: " + music.getSong());
     }
+
 }
