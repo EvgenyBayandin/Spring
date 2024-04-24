@@ -2,9 +2,23 @@ package com;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 @Component
 public class MusicPlayer {
-//    @Autowired
+    @Value("${musicPlayer.name}")
+    private String name;
+    @Value("${musicPlayer.volume}")
+    private int volume;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    //    @Autowired
 //    @Qualifier("danceMusic") // укажи id bean который нужно внедрить
     private Music music;
     private Music music2;
