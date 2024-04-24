@@ -1,5 +1,7 @@
 package com;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DanceMusic implements Music{
 
     private DanceMusic(){}
