@@ -7,7 +7,7 @@ public class DanceMusic implements Music{
     }
 
     public void doMyDestroy(){
-        System.out.println("DanceMusic doMyDestroy");
+        System.out.println("DanceMusic doMyDestroy"); //метод будет работать только с scope singleton
     }
 
     @Override

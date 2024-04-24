@@ -12,6 +12,7 @@ public class TestSpring {
 
         System.out.println(danceMusic.getSong());
 
+
 //        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 //        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 //
