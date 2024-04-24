@@ -1,19 +1,17 @@
 package com;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 @Component
 public class MusicPlayer {
-    private DanceMusic danceMusic;
-    private RockMusic rockMusic;
-
     @Autowired
-    public MusicPlayer(DanceMusic danceMusic, RockMusic rockMusic) {
-        this.danceMusic = danceMusic;
-        this.rockMusic = rockMusic;
-    }
+    @Qualifier("danceMusic") // укажи id bean который нужно внедрить
+    private Music music;
+
+
 
     public String playMusic() {
-        return "Playing song: " + danceMusic.getSong();
+        return "Playing song: " + music.getSong();
     }
 
 }
