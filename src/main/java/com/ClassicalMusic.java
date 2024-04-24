@@ -5,7 +5,6 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Component
-
 public class ClassicalMusic implements Music {
     @PostConstruct
     public void doMyInit() {
